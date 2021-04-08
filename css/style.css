@@ -187,6 +187,19 @@ footer .footer-logo img {
 
 
 /*grid-systems styles*/
+.grid-container{
+    max-width: 1759px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.row-part{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
 .section-two {
     margin-bottom: 180px;
 }
@@ -194,60 +207,84 @@ footer .footer-logo img {
 .rotate-title{
     transform: rotate(-90deg);
 }
+.relative-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 390px;
+}
+.text-part{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 390px;
+}
+.view-container{
+    position: absolute;
+    right: 15px;
+    top: 13.5px;
+}
 .relative-box img{
     max-width: 400px;
     max-height: 390px;
     object-fit: cover;
 }
-
-.relative-box {
-    max-width: 400px;
-    max-height: 390px;
-}
 .relative-second-box{
-      min-height: 538px;
-      height: 100%;
-      background-color: #333333;
-      opacity: 80%;
+    position: relative;
+    min-height: 538px;
+    height: 100%;
+    width: 400px;
+
+    background-color: #333333;
+    opacity: 80%;
 }
 
 .second-box-p {
     color: #fff;
     font-size: 14px;
     font-weight: 300;
-    margin-top: 155px;
+    position: absolute;
+    transform: rotate(270deg);
+    left: 0;
+    top: 162px;
 }
 
 .second-box-container {
-    margin-left: 11px;
-    margin-bottom: 24.5px;
+    position: absolute;
+    left: 30px;
+    bottom: 25.5px;
 }
 
 .second-box-container-p {
     font-weight: 300;
     font-size: var(--s-18px);
+    color: #fff;
 }
 
 .second-box-container-h6 {
     font-weight: 400;
     font-size: var(--s-18px);
+    color: #fff;
 } 
 
 .relative-box-p {
     color: #fff;
     font-size: 14px;
     font-weight: 300;
+    position: absolute;
+    transform: rotate(270deg);
+    left: 0;
+    top: 50%;
 }
-
-
-.view-container {
-    margin-top: 12.2px;
-    margin-right: 10px;
-}
-
 .view-container-span {
     font-size: 14px;
     font-weight: 200;
+    color: #fff;
+}
+.image-content{
+    height: 100%;
+    width: 100%;
 }
 
 .col-p {
@@ -279,11 +316,12 @@ footer .footer-logo img {
     color: #FF4C65;
     font-size: 32px;
 }
-
-.box-lock img {
-    margin-right: 10px;
-    margin-bottom: 10px;
+.box-lock{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
 }
+
 
 
 /*pagination*/
