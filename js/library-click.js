@@ -1,7 +1,10 @@
 'use strict'
 
 let libClick = document.getElementById("lib-click");
+let menuItemTag = document.getElementById("menu-item-tag");
+menuItemTag.addEventListener("click", handleMenuItemTagClick);
 libClick.addEventListener("click", libFunc);
+
 
 function libFunc(addContent) {
     //prevents page for refresh
@@ -42,3 +45,18 @@ function libFunc(addContent) {
         }
     }
 }
+
+function handleMenuItemTagClick(addContent){
+    let libListener = document.getElementById("library-content");
+    let colChilds = document.getElementsByClassName("col");
+    libListener.style.display = "block";
+   let labels = document.getElementById("menu-content").getElementsByClassName("checkbox");
+
+    for (var i=0; i<labels.length; i++) {
+            labels[i].style.display = "none";
+        }
+   
+}
+
+
+
