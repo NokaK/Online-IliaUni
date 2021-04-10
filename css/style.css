@@ -479,17 +479,11 @@ footer .footer-logo img {
 }
 
 /*tag menu*/
-#square{
-    /*background-color: red;*/
-    width: 400px;
-    height: 500px;
-/*    display: none;
-*/}
-.tag-elements a{
+
+.tag-elements a {
     color: #fff;
     font-size: 18px;
     font-family: 'Noto Sans Georgian';
     line-height: 2;
     text-decoration: none;
-
 }
