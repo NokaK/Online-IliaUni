@@ -65,7 +65,11 @@ function handleMenuItemTagClick() {
 function openMenuContainer() {
     // show menu container
     let menuContent = document.getElementById("library-content");
-    menuContent.style.display = "block";
+    if (menuContent.style.display == "block") {
+        menuContent.style.display = "none";
+    } else {
+        menuContent.style.display = "block";
+    }
 
     // hide labels - library menu items
     let labels = document.getElementById("menu-content").getElementsByClassName("checkbox");
