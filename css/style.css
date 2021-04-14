@@ -259,6 +259,35 @@ header li:hover{
     display: block;
 }
 
+/*our pagination css*/
+
+/*pagination*/
+.pagination ul{
+    display: flex;
+    justify-content: space-between;
+    width: 484px;
+    padding-left: 0;
+}
+.pagination ul li {
+    list-style: none;
+    line-height: 45px;
+    font-size: 46px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination ul li.dots{
+    cursor: default;
+}
+.pagination ul li.active,
+.pagination ul li.active:hover{
+    background-color: #E2E2F7;
+}
+.numb-active{
+    color: #E2E2F7;
+}
+
 /*here is footer css style*/
 footer {
 	color: #fff;
