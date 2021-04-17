@@ -263,8 +263,6 @@ header li:hover{
 
 /*pagination*/
 .pagination ul{
-    display: flex;
-    justify-content: space-between;
     width: 484px;
     padding-left: 0;
 }
