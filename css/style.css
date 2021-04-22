@@ -149,9 +149,9 @@ header li:hover{
 #content-background {
     font-family: 'Noto Sans Georgian';
     font-size: 18px;
-    z-index: 2;
+    z-index: 0;
     background-color: #1E1E1D;
-    height: calc(100% - 60px);
+    height: calc(100% - -20%);
     color: white;
     padding: 25px 50px;  
     display: none;
