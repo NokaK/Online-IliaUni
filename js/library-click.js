@@ -198,8 +198,11 @@ function lectFunc() {
         libContEl.style.display = "none";
         lecEl.style.display = "block";
         lectClick.style.borderLeft = "none";
+        tagEl.style.display = "none";
         libClick.style.borderLeft = "1px solid #707070";
         libClick.style.color = "#333333";
+        tagEl.style.borderLeft = "1px solid #707070";
+        tagEl.style.color = "#333333";
         lectClick.style.color = "#fff";
     }
     

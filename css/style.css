@@ -238,14 +238,16 @@ header li:hover{
 
 /*tags*/
 .tag-items{
-    margin: 40px 0 40px 20px;
+    margin: 50px 0 40px 20px;
     max-height: 770px;
     color: #fff;
 }
 .tag-elements a{
+    margin-top: 10px;
     color: #fff;
     font-family: Noto Sans Georgian;
     font-size: 18px;
+    line-height: 2;
     font-weight: lighter;
     text-decoration: none;
 }
