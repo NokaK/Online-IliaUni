@@ -28,10 +28,11 @@ function libFunc() {
 
     //lib-content (form)
     let libContEl = document.getElementById("lib-content");
-
+    let tagEl = document.getElementById("tag-content");
     //hides lect-content id
     let getLectTab = document.getElementById("lect-content");
     getLectTab.style.display = "none";
+    tagEl.style.display = "none";
 
     if  (getContentBackground.style.display == "none") {
 
@@ -126,6 +127,7 @@ function lectFunc() {
     
 
     let libContEl = document.getElementById("lib-content");
+    let tagEl = document.getElementById("tag-content");
     
 
     let lecEl = document.getElementById("lect-content");
@@ -134,6 +136,8 @@ function lectFunc() {
         
     //display none on lib-content
     libContEl.style.display = "none";
+    tagEl.style.display = "none";
+
 
     let gridSystem = document.getElementById("grid-system-id");
     
@@ -224,4 +228,5 @@ function unCheckFunc() {
     
 
 }
+
 
