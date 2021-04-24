@@ -236,6 +236,22 @@ header li:hover{
 }
 
 
+/*tags*/
+.tag-items{
+    margin: 40px 0 40px 20px;
+    max-height: 770px;
+    color: #fff;
+}
+.tag-elements a{
+    color: #fff;
+    font-family: Noto Sans Georgian;
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+.tag-elements:last-child{
+    padding-bottom: 150px;
+}
 /*pagination*/
 #pagination-id {
     max-width: 480px;

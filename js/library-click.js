@@ -218,15 +218,103 @@ function unCheckFunc() {
             checkBoxes[i].checked = '';
         }
     }
-
-
-    
-       
-    
-
-    
-    
+  
 
 }
 
+
+let menutag = document.getElementById("menu-tag-item");
+menutag.addEventListener("click", tagFunc);
+
+function tagFunc() {
+
+    //get filter-items
+    let filterElem = document.querySelectorAll('.filter-items');
+
+
+    //get col classes
+    let colChilds = document.getElementsByClassName("box-visibility");
+
+
+    //get offset width of library element for library content
+    let tagGetWidth = document.getElementById("menu-tag-item").offsetWidth;
+
+    
+
+    let libContEl = document.getElementById("lib-content");
+    let tagEl = document.getElementById("tag-content");
+    
+    let lecEl = document.getElementById("lect-content");
+
+    
+        
+    //display none on lib-content
+    libContEl.style.display = "none";
+    lecEl.style.display = "none";
+
+    let gridSystem = document.getElementById("grid-system-id");
+    
+    
+    if (getContentBackground.style.display == "none") {
+        getContentBackground.style.display = "block";
+
+        //removes border left on lec-click id
+        tagEl.style.display = "block";
+        for (let i = 0; i < filterElem.length - 2; i++) {
+            filterElem[i].style.color = "#333333";
+        }
+
+        for (let a = 0; a < colChilds.length; a += 4) {
+            colChilds[a].style.display = "none";
+        }
+
+        //Library content gets width parameter of the library element current width
+        getContentBackground.style.maxWidth = tagGetWidth + 36 + "px";
+
+
+        gridSystem.style.marginLeft = getContentBackground.offsetWidth + 15 + "px";
+
+        for (let b = 0; b < colChilds.length; b++) {
+            colChilds[b].classList.remove("col-3");
+            colChilds[b].classList.add("col-4");
+        }
+
+    }
+    else if (getContentBackground.style.display == "block" && tagEl.style.display == "block" && menutag) {
+        getContentBackground.style.display = "none";
+        
+        //add border left on lec-click id
+        menutag.style.borderLeft = "1px solid #707070";
+
+        
+        for (let i = 0; i < filterElem.length - 2; i++) {
+            filterElem[i].style.color = "#fff";
+        }
+        
+        for (let a = 0; a < colChilds.length; a += 4) {
+            colChilds[a].style.display = "block";
+        }
+
+        gridSystem.style.marginLeft = getContentBackground.offsetWidth - 15 + "px";
+        
+       
+        
+        for (let b = 0; b < colChilds.length; b++) {
+            colChilds[b].classList.remove("col-4");
+            colChilds[b].classList.add("col-3");
+        }
+        
+
+    } else if (menutag && getContentBackground.style.display == "block") {
+        libContEl.style.display = "none";
+        lecEl.style.display = "none";
+        tagEl.style.display = "block";
+        menutag.style.borderLeft = "none";
+        libClick.style.borderLeft = "1px solid #707070";
+        libClick.style.color = "#333333";
+        lectClick.style.borderLeft = "1px solid #707070";
+        lectClick.style.color = "#333333";
+        menutag.style.color = "#fff";
+    }
+}
 
