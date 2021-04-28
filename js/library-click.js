@@ -258,7 +258,7 @@ function tagFunc() {
     if (getContentBackground.style.display == "none") {
         getContentBackground.style.display = "block";
 
-        //removes border left on lec-click id
+        //removes border left on tagEl id
         tagEl.style.display = "block";
         for (let i = 0; i < filterElem.length - 2; i++) {
             filterElem[i].style.color = "#333333";
@@ -268,7 +268,7 @@ function tagFunc() {
             colChilds[a].style.display = "none";
         }
 
-        //Library content gets width parameter of the library element current width
+        //მmenutag content gets width parameter of the library element current width
         getContentBackground.style.maxWidth = tagGetWidth + 36 + "px";
 
 
@@ -284,7 +284,8 @@ function tagFunc() {
         getContentBackground.style.display = "none";
         
         //add border left on lec-click id
-        menutag.style.borderLeft = "1px solid #707070";
+        menutag.classList.remove("b-left-none");
+        menutag.classList.add("border-color");
 
         
         for (let i = 0; i < filterElem.length - 2; i++) {
@@ -308,9 +309,9 @@ function tagFunc() {
     }  else if (libClick && getContentBackground.style.display == "block") {
         libContEl.style.display = "none";
         tagEl.style.display = "block";
-        menutag.style.borderLeft = "none";
+        menutag.classList.add("b-left-none");
         libClick.style.borderLeft = "1px solid #707070";
         libClick.style.color = "#333333";
-        menutag.style.color = "#fff";
+        menutag.classList.add("tag-color");
     }
 }

@@ -254,6 +254,15 @@ header li:hover{
 .tag-elements:last-child{
     padding-bottom: 150px;
 }
+.b-left-none{
+    border-left: none;
+}
+.border-color{
+    border-color: 1px solid #707070;
+}
+.tag-color{
+    color: #fff;
+}
 /*pagination*/
 #pagination-id {
     max-width: 480px;
