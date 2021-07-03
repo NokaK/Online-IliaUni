@@ -429,11 +429,25 @@ footer {
 }
 
 .footer-logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
   left: 81px;
   top: 129px;
 }
 .footer-logo img{
-  width: 463px;
+  width: 67x;
+  height: 67px;
+}
+.footer-logo p{
+  font-size: 20px;
+  padding-left: 20px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+.footer-title{
+  text-transform: uppercase;
 }
 .z-index {
   z-index: 1;

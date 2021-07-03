@@ -135,4 +135,25 @@
 		display: none;
 	}
 }
+/*footer*/
 
+@media (max-width: 1366px){
+  .footer-logo{
+    flex-wrap: wrap;
+    width: 290px;
+  }
+  body{
+    background: red;
+  }
+}
+@media (max-width: 1000px){
+  .confidence{
+  left: 75%;
+}
+}
+@media (max-width: 771px){
+  .site-footer{
+    height: 479px;
+
+  }
+}
