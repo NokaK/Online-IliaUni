@@ -139,21 +139,33 @@
 
 @media (max-width: 1366px){
   .footer-logo{
-    flex-wrap: wrap;
-    width: 290px;
+    width: 300px;
+    left: 50px;
   }
-  body{
-    background: red;
+  .footer-logo p{
+    font-size: 16px;
   }
 }
-@media (max-width: 1000px){
-  .confidence{
-  left: 75%;
-}
-}
-@media (max-width: 771px){
-  .site-footer{
-    height: 479px;
 
+@media(max-width: 1125px){
+  .widget{
+    left: 75%;
+  }
+  .widget a{
+    font-size: 14px;
+  }
+  .confidence{
+    font-size: 14px;
+    left: 75%;
+  }
+  .social-icons{
+    left:92%;
+    width: 80px;
+  }
+  
+}
+@media(max-width: 1065px){
+  .footer-logo{
+    left: 20px;
   }
 }
