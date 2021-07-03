@@ -471,6 +471,9 @@ footer {
 .widget a{
   font-size: 18px;
 }
+.container-footer{
+  height: 267px;
+}
 .col-xl-3 {
   display: flex;
   justify-content: space-between;
@@ -485,13 +488,19 @@ footer {
 }
 .social-icons i{
   color: #fff;
+  width: 34px;
+  height: 35px;
 }
-
+.footer-logo-big{
+  left: 30%;
+  top: 10%;
+}
 .widget a {
   color: #fff;
   font-family: "DejaVu Sans";
   text-decoration: none;
   font-size: 18px;
+  font-family: 'DejaVu Sans';
 }
 .widget{
  width: 15%;
@@ -511,6 +520,8 @@ footer {
   color: #fff;
   white-space: nowrap;
   height: 35px
+  font-size:16px;
+  font-family: 'Noto Sans Georgian';
 }
 .online-iliauni{
   color: #fff;

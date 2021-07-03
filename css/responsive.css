@@ -169,3 +169,41 @@
     left: 20px;
   }
 }
+@media (max-width: 1023px){
+  .social-icons{
+    left: 90%;
+    width: 66px;
+  }
+  .widget{
+    width: 12%;
+  }
+  .footer-logo p{
+    font-size: 14px;
+  }
+}
+@media(max-width: 980px){
+  .site-footer{
+    height: 479px;
+  }
+  .widget:last-child{
+      display: none;
+  }
+  .social-icons{
+    top: 54px;
+  }
+  .footer-logo{
+    top: 46px;
+  }
+  .confidence{
+    left: 40%;
+    top: 186.3px;
+  }
+  .online-iliauni{
+    top: 230px;
+    left: 45%
+  }
+  .footer-logo-big{
+    left: 30%;
+    
+  }
+}
