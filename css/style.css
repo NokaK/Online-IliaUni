@@ -429,9 +429,6 @@ footer {
 }
 
 .footer-logo{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 450px;
   left: 81px;
   top: 129px;
@@ -443,42 +440,20 @@ footer {
 .footer-logo p{
   font-size: 20px;
   padding-left: 20px;
-  text-transform: uppercase;
-  white-space: normal;
-}
-.footer-title{
-  text-transform: uppercase;
 }
 .z-index {
   z-index: 1;
 }
-.site-footer.style-3 {
+.site-footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #1e1e1d;
 }
-/*.row.position-absolute{
-  top: 126px;
-  height: 85px;
-}
-.row.position-absolute.information{
-  top: 300px;
-  height: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-}*/
 .widget a{
   font-size: 18px;
 }
-.col-xl-3 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
 .social-icons{
-  display: flex;
-  justify-content: space-between;
   left:85%; 
   top: 161px;
   width: 100px;
