@@ -57,8 +57,6 @@ a {
 .background-h2 {
   font-weight: 300;
 }
-
-/* =========header================ */
 header {
   z-index: 3;
 }
@@ -431,14 +429,14 @@ footer {
 .footer-logo{
   width: 450px;
   left: 81px;
-  top: 129px;
+  top: 40%;
 }
 .footer-logo img{
-  width: 67x;
+  width: 67px;
   height: 67px;
 }
 .footer-logo p{
-  font-size: 20px;
+  font-size: 18px;
   padding-left: 20px;
 }
 .z-index {
@@ -456,21 +454,44 @@ footer {
 .social-icons{
   left:85%; 
   top: 161px;
+}
+.widget a{
+  font-size: 18px;
+}
+.container-footer{
+  height: 267px;
+}
+.col-xl-3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.social-icons{
+  display: flex;
+  justify-content: space-between;
+  left:87%; 
+  top: 45%;
   width: 100px;
 }
 .social-icons i{
   color: #fff;
+  width: 34px;
+  height: 35px;
 }
-
+.footer-logo-big{
+  left: 30%;
+  top:18%;
+}
 .widget a {
   color: #fff;
   font-family: "DejaVu Sans";
   text-decoration: none;
   font-size: 18px;
+  font-family: 'DejaVu Sans';
 }
 .widget{
- width: 200px;
- top: 161px;
+ width: 15%;
+ top: 45%;
  left: 70%;
 }
 .bottom-content {
@@ -482,13 +503,19 @@ footer {
   color: #fff;
 }
 .confidence{
-  left: 80%;
+  left: 75%;
+  top: 85%;
   color: #fff;
   white-space: nowrap;
+  height: 35px;
+  font-size:16px;
+  font-family: 'Noto Sans Georgian';
 }
 .online-iliauni{
   color: #fff;
   left: 35px;
+  top: 85%;
+  height: 35px;
 }
 .widget_poster {
   margin-bottom: 0px;
