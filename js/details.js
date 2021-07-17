@@ -95,7 +95,6 @@ const loginCourse = () => {
     coursesAuthentication.classList.remove("d-none");
     coursesAuthentication.children[1].innerText = "ძველი სამყაროს დიზაინი (შესავალი)";
     popupShow();
-    lowerBtn.removeEventListener("click",loginCourse);
 }
 lowerBtn.addEventListener("click",loginCourse);
 
@@ -133,18 +132,8 @@ for(let i = 0 ; i < lecturesList.length ; i++){
 function changeContent(){
     changeSliderBtn();
     addlInfo();
-    changeLists();
+    lowerBtn.removeEventListener("click",loginCourse);
 }
-
-// function changeLists(){
-//     for(let i = 0 ; i < lecturesList.length ; i++){
-//         lecturesList[i].classList.remove("pe-4");
-//         lecturesList[i].children[1].style.width = "180px";
-//         lecturesList[i].children[1].children[1].classList.add("d-flex");
-//         lecturesList[i].children[1].children[1].classList.remove("d-none");
-//     }
-
-// }
 
 //after login enable slider button
 function changeSliderBtn(){
@@ -172,11 +161,17 @@ function addlInfo(){
     lowerBtn.children[1].classList.remove("fa-arrow-right","ps-3");
     lowerBtn.children[1].classList.add("fa-arrow-down","pt-3");
 }
+// show test div and hide video player
 function startTest(){
-    // show test div and hide video player 
-    testBox.classList.add("d-flex")
-    testBox.classList.remove("d-none")
-    slides.style.display = "none";
+    // if course will end show final quiz 
+    if(quizPassedNum === srcArray.length-1){
+        finalTest()
+    }else{
+        testBox.classList.add("d-flex")
+        testBox.classList.remove("d-none")
+        slides.style.display = "none";
+    } 
+
 }
 const correct = () => {
     quizPassedNum++
@@ -247,3 +242,4 @@ function clearQuizResults(){
     submitAnswer.removeEventListener("click",inCorrect);
     submitAnswer.addEventListener("click",checkAnswer);
 }
+
