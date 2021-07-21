@@ -227,7 +227,9 @@ header {
   z-index: 10;
   transition: all 0.4s;
 }
-
+.popup-wrapper{
+  height: 84% !important;
+}
 .result-text{
   top: 21%;
 }
