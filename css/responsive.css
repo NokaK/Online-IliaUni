@@ -62,9 +62,6 @@
     display: none !important;
   }
 
-  .footer-logo-big {
-    left: 70% !important;
-  }
 }
 @media (max-width: 1201px) {
   /* header  */
@@ -299,6 +296,13 @@
   }
 }
 @media (max-width: 768px) {
+  /* header  */
+  .popup{
+    width: 50% !important;
+  }
+  .hidePopup {
+    right: -100%;
+  }
   #library-left-elem li span{
     display: none;
   }
@@ -348,12 +352,6 @@
   }
   .nav-li {
     padding: 0;
-  }
-  .popup{
-    width: 100% !important;
-  }
-  .hidePopup {
-    right: -100%;
   }
 
   /* details  */
@@ -427,6 +425,9 @@
   }
   .header-icons:nth-child(1){
     display: none;
+  }
+  .popup{
+    width: 100% !important;
   }
 
 
@@ -514,19 +515,25 @@
     left: 42%;
   }
 }
-@media (max-height : 440px){
-  .popup-wrapper{
-    height: 287px !important;
-    overflow-y: scroll;
-    padding: 40px 0 !important;
+@media (max-height : 600px){
+  .menu-brain{
+    display: none !important;
   }
-}
-@media (max-height : 300px){
   .popup-wrapper{
-    height: 280px !important;
     overflow-y: scroll;
-    padding: 140px 0 !important;
+    margin-top: 20px;
+    box-shadow: -3px 10px 8px -8px white;
   }
+  .popup-wrapper div {
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .input-links, .password-recovery{
+    height: auto !important;
+    margin-bottom: 20px !important;
+  }
+
 }
 @media(max-width: 375px){
   .footer-logo-big{
