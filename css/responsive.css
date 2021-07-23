@@ -508,7 +508,16 @@
   .social-icons{
     top: 142px;
   }
-
+  .video-section{
+    justify-content: center !important;
+    padding-top: 0 !important;
+  }
+  .video-section div{
+    margin: 0 !important;
+  }
+  .video-section a:nth-child(2){
+    margin-top: 166px;
+  }
     /* tabs  */
     #library-left-elem{
       padding-left: 0px;
