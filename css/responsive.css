@@ -59,7 +59,7 @@
   .widget-about,
   .box-visibility:nth-child(4),
   .social-icons {
-    display: none !important;
+    display: none;
   }
 
 }
@@ -619,12 +619,25 @@
     display: block;
   }
 }
+@media(max-width: 770px){
+  .col-3{
+    width: 50%;
+    padding-bottom: 10%;
+  }
+}
 @media(max-width: 576px){
   .third-content{
     display:  block;
   }
+  .lectures-p-margin{
+    margin-top: 50px;
+  }
   .col-3{
     width: 100%;
+    margin-bottom: 30%;
+  }
+  .row{
+    margin-top:  0;
   }
   .first-container{
     margin-bottom: 0;
@@ -632,8 +645,9 @@
   .relative-second-box{
     margin-top: 30px;
   }
-
-  
+  .box-content-p {
+    white-space: nowrap;
+  }
 }
 @media(max-width: 480px){
   .course-space{
@@ -652,10 +666,13 @@
   .first-container{
     margin-bottom: 50%;
   }
+  .box-visibility{
+    padding-bottom: 40%;
+  }
 }
 @media(max-width: 280px){
   .first-container{
     margin-bottom: 60%;
   }
-}
 
+}
