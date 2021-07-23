@@ -909,6 +909,10 @@ footer {
 #finalQuizSubmit{
   display: flex;
 }
+.certificates-side{
+  padding: 8% 5%;
+  height: fit-content;
+}
 /* ===personal page== */
 .personal-page-tabs{
   font-family: "Noto Sans Georgian";
@@ -928,6 +932,11 @@ footer {
 .current-courses{
   padding: 4% 4%;
 }
+#logoutBtn{
+  left: 50%;
+  transform: translate(-50%);
+  height: 58px;
+}
 .current-courses h3 , .finished-courses  h3 ,.badges-section h3{
   font-family: 'DejaVu Sans';
   font-size: 22px;
@@ -945,7 +954,7 @@ footer {
   right: 10px;
 }
 .course-info-side{
-  padding: 8% 5%;
+  padding: 4% 5%;
 }
 .continue-course-button{
   width: 200px;
@@ -963,6 +972,10 @@ footer {
   padding: 2.7% 4%;
   background: #E8E8E8;
 }
+.finished-course1,.finished-course2{
+  min-width: 640px;
+  flex-wrap: wrap;
+}
 .certificate-background-image{
   background-image: url(../img/certificate.png);
   min-width: 400px;
@@ -971,9 +984,10 @@ footer {
   background-color: #0000004d;
   background-blend-mode: overlay;
   position: relative;
+  margin-bottom:5%;
 }
-.certificates-side{
-  padding: 70px 5%;
+.rating-wrapper{
+  margin: 20px 0;
 }
 /* ---badges--- */
 .badges-section{

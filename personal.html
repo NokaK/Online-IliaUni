@@ -155,28 +155,28 @@
     <div class="row">
       <h3 class="m-0">მიმდინარე კურსები</h3>
     </div>
-    <div class="row courses-wrapper d-flex flex-wrap">
+    <div class="row courses-wrapper d-flex justify-content-between">
         <!-- course 1 -->
-        <div class="current-course1 col-6 d-flex">
-            <div class="image-side">
-                <div class="background-image  position-relative">
-                  <!-- views  -->
-                    <div class="position-absolute views-eye">
-                        <img src="img/icon-eye.svg" alt="img">
-                        <span class="view-container-span text-white ms-1"> 1324 </span>
-                    </div>
-                    <!-- progress bar  -->
-                    <div class="position-absolute top-50 start-50 progress">
-                        <span class="progress-left">
-                            <span class="progress-bar progressLeft"></span>
-                        </span>
-                        <span class="progress-right">
-                            <span class="progress-bar progressRight"></span>
-                        </span>
-                        <div class="progress-value">0</div>
-                    </div>
+        <div class="current-course1 d-flex w-50">
+          <div class="image-side">
+            <div class="background-image  position-relative">
+              <!-- views  -->
+                <div class="position-absolute views-eye">
+                    <img src="img/icon-eye.svg" alt="img">
+                    <span class="view-container-span text-white ms-1"> 1324 </span>
                 </div>
+                <!-- progress bar  -->
+                <div class="position-absolute top-50 start-50 progress">
+                  <span class="progress-left">
+                    <span class="progress-bar progressLeft"></span>
+                  </span>
+                  <span class="progress-right">
+                    <span class="progress-bar progressRight"></span>
+                  </span>
+                <div class="progress-value">0</div>
+              </div>
             </div>
+          </div>
             <div class="course-info-side d-flex flex-column justify-content-between">
                 <div class="course-description">
                     <h5>ლექტორი: <span>თამარ ცხადაძე</span></h5>
@@ -190,7 +190,7 @@
             </div>
         </div>
         <!-- course  2 --> 
-        <div class="current-course2  col-6 d-flex">
+        <div class="current-course2 d-flex w-50">
             <div class="image-side">
                 <div class="background-image  position-relative">
                   <!-- views  -->
@@ -229,65 +229,9 @@
     <div class="row">
       <h3 class="m-0">დასრულებული კურსები</h3>
     </div>
-    <div class="row courses-wrapper d-flex  flex-wrap">
+    <div class="row courses-wrapper d-flex  flex-wrap justify-content-between">
         <!-- finished-course 1  -->
-        <div class="finished-course1  col-6 d-flex justify-content-between flex-column">
-            <div class="image-side  d-flex position-relative">
-            <!-- certificate background image  -->
-              <div class="certificate-background-image">
-                <!-- progress bar  -->
-                <div class="position-absolute top-50 start-50 progress">
-                  <span class="progress-left">
-                      <span class="progress-bar progressLeft"></span>
-                  </span>
-                  <span class="progress-right">
-                      <span class="progress-bar progressRight"></span>
-                  </span>
-                  <div class="progress-value">0</div>
-                </div>
-              </div>
-
-
-              <!-- download certificates  -->
-              <div class="certificates-side d-flex justify-content-between flex-column">
-                <div class="certificates d-flex flex-column">
-                    <a href="./img/certificate1.svg" download class="text-dark mb-4">
-                        <img src="./img/certificate1.svg" alt="certificate">
-                        სერთიფიკატი
-                    </a>
-                    <a href="./img/certificate2.svg" download class="text-dark">
-                        <img src="./img/certificate2.svg" alt="certificate">
-                        სერთიფიკატი
-                    </a>
-                </div>
-                <!-- star rating------- -->
-                <div class="rating-wrapper d-flex align-items-center">
-                    <p class="text-dark me-3 m-0">რეიტინგი: </p>
-                    <div  class="rating d-flex flex-row-reverse">
-                    <input type="radio" name="star" id="star5" class="d-none"> <label for="star5"></label>
-                    <input type="radio" name="star" id="star4" class="d-none"> <label for="star4"></label>
-                    <input type="radio" name="star" id="star3" class="d-none"> <label for="star3"></label>
-                    <input type="radio" name="star" id="star2" class="d-none"> <label for="star2"></label>
-                    <input type="radio" name="star" id="star1" class="d-none"> <label for="star1"></label>
-                    </div>
-                </div>
-                <a href="#" class="d-flex justify-content-between p-2 continue-course-button"><span>კურსის გაგრძელება</span> <img src="./img/arrow-right.svg" alt="right"></a>
-              </div>
-            </div>
-            <!-- finished-course-description -->
-            <div class="course-info-side d-flex flex-column justify-content-between ps-0">
-                <div class="course-description">
-                    <h5>ლექტორი: <span>თამარ ცხადაძე</span></h5>
-                    <h5>კურსის შედარებით გრძელი სათაური ორ ხაზიანი</h5>
-                    <div class="box-content d-flex">
-                        <i class="box-content-icon fas fa-play-circle"></i>
-                        <p class="box-content-p"> 7 ლექცია, ხანგძლივობა: 23წთ.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- finished-course 2  -->
-        <div class="row finished-course2  col-6 d-flex justify-content-between flex-column">
+        <div class="finished-course1  w-50 d-flex justify-content-between flex-column">
             <div class="image-side d-flex p-0">
                 <!-- certificate background image  -->
                 <div class="certificate-background-image">
@@ -303,7 +247,61 @@
                   </div>
                 </div>
                 <!-- download certificates  -->
-                <div class="certificates-side d-flex justify-content-between flex-column">
+                <div class="certificates-side d-flex justify-content-center flex-column">
+                    <div class="certificates d-flex flex-column">
+                        <a href="./img/certificate1.svg" download class="text-dark mb-4">
+                            <img src="./img/certificate1.svg" alt="certificate">
+                            სერთიფიკატი
+                        </a>
+                        <a href="./img/certificate2.svg" download class="text-dark">
+                            <img src="./img/certificate2.svg" alt="certificate">
+                            სერთიფიკატი
+                        </a>
+                    </div>
+                    <!-- star rating------- -->
+                    <div class="rating-wrapper d-flex align-items-center">
+                        <p class="text-dark me-3 m-0">რეიტინგი: </p>
+                        <div  class="rating d-flex flex-row-reverse">
+                        <input type="radio" name="star" id="star5" class="d-none"> <label for="star5"></label>
+                        <input type="radio" name="star" id="star4" class="d-none"> <label for="star4"></label>
+                        <input type="radio" name="star" id="star3" class="d-none"> <label for="star3"></label>
+                        <input type="radio" name="star" id="star2" class="d-none"> <label for="star2"></label>
+                        <input type="radio" name="star" id="star1" class="d-none"> <label for="star1"></label>
+                        </div>
+                    </div>
+                    <a href="#" class="d-flex justify-content-between p-2 continue-course-button"><span>კურსის გაგრძელება</span> <img src="./img/arrow-right.svg" alt="right"></a>
+                </div>
+            </div>
+            <!-- finished-course-description -->
+            <div class="course-info-side d-flex flex-column justify-content-between ps-0">
+                <div class="course-description">
+                    <h5>ლექტორი: <span>თამარ ცხადაძე</span></h5>
+                    <h5>კურსის შედარებით გრძელი სათაური ორ ხაზიანი</h5>
+                    <div class="box-content d-flex">
+                        <i class="box-content-icon fas fa-play-circle"></i>
+                        <p class="box-content-p"> 7 ლექცია, ხანგძლივობა: 23წთ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- finished-course 2  -->
+        <div class="finished-course2  w-50 d-flex justify-content-between flex-column">
+            <div class="image-side d-flex p-0">
+                <!-- certificate background image  -->
+                <div class="certificate-background-image">
+                  <!-- progress bar  -->
+                  <div class="position-absolute top-50 start-50 progress">
+                    <span class="progress-left">
+                        <span class="progress-bar progressLeft"></span>
+                    </span>
+                    <span class="progress-right">
+                        <span class="progress-bar progressRight"></span>
+                    </span>
+                    <div class="progress-value">0</div>
+                  </div>
+                </div>
+                <!-- download certificates  -->
+                <div class="certificates-side d-flex justify-content-center flex-column">
                     <div class="certificates d-flex flex-column">
                         <a href="./img/certificate1.svg" download class="text-dark mb-4">
                             <img src="./img/certificate1.svg" alt="certificate">
@@ -344,15 +342,18 @@
   </section>
   <section class="badges-section">
     <h3 class="mb-0">ბეჯები</h3>
-    <div class="badges-wrapper  d-flex">
+    <div class="badges-wrapper  d-flex flex-wrap">
       <div id="badge1" class="m-5 ms-0 mt-2" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="ოქროს ბეჯი">
         <img src="./img/badges.svg" alt="gold-badge">
       </div>
-      <div id="badge2" class="m-5 mt-2" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="ოქროს ბეჯი">
+      <div id="badge2" class="m-5 ms-0 mt-2" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-content="ოქროს ბეჯი">
         <img src="./img/badges.svg" alt="gold-badge">
       </div>  
     </div>
   </section>
+  <div class="container position-relative">
+    <button class="btn btn-dark text-white position-absolute logout d-block p-3 " id="logoutBtn">სისტემიდან გამოსვლა</button>
+  </div>
   <!-- other courses  -->
   <section class="video-section pt-5">
     <div class="container-fluid row  row-cols-4 d-flex justify-content-between  flex-wrap pt-5 ">
