@@ -2,7 +2,6 @@
 const burger = document.querySelector(".burger");
 //Login button
 const loginBtn = document.querySelector('.login');
-const loggOutbutton = document.querySelector("#logoutBtn") ;
 //Close button
 const closeBtn = document.querySelector('.close');
 //Authentication form button
@@ -84,7 +83,6 @@ const loggOut = () => {
    loginBtn.removeEventListener('mouseover',loggOutButton);
    loginBtn.removeEventListener('click',loggOutButton);
    sessionStorage.loggedIn = false;
-   
    location.reload();
 }
 //login user
@@ -106,8 +104,6 @@ if(sessionStorage.loggedIn === "true"){
    loginBtn.addEventListener('click',loggOutButton);
    loggOutBtn.addEventListener('mouseout',() =>  loggOutBtn.style.display = "none");
    loggOutBtn.addEventListener('click',loggOut);
-   loggOutbutton.addEventListener('click',loggOut);
-   console.log("yes");
 }
 
 
