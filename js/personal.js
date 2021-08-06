@@ -28,3 +28,11 @@ progressBar(currentCourses,1,35);
 progressBar(finishedCourses,0,60);
 // finished course 2    
 progressBar(finishedCourses,1,55);
+
+// logout 
+function loggOutPersonalPage(){
+    loggOut();
+    location.href = 'index.html';
+}
+const personalPageLogout = document.querySelector("#logoutBtn") ;
+personalPageLogout.addEventListener('click',loggOutPersonalPage);
